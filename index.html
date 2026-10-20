@@ -83,8 +83,9 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(60px,9vw,120px);li
 .band h2{font-family:var(--display);font-weight:400;font-size:clamp(36px,5vw,56px);line-height:1.02;margin-bottom:32px}
 
 /* ---------- launch ---------- */
-.launch{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;align-items:start}
-.dates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+/* Dates in one row (any count), the "what's on sale when" table full width below */
+.launch{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:start}
+.dates{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
 .date{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:grid;gap:6px;align-content:start}
 .date:first-child{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
 .date__tag{justify-self:start;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:var(--fg);color:var(--bg);padding:3px 10px;border-radius:999px}
@@ -248,7 +249,7 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(60px,9vw,120px);li
       <p class="tagline">Not so scary after all.</p>
       <p class="hero__cast"><a href="#jack">Jack</a> · <a href="#lemmy">Lemmy</a> · <a href="#medusa">Medusa</a></p>
       <p class="hero__intro">Three naughty little monsters just moved into the Nancy Monster Mansion: Jack, Lemmy and Medusa. Our exclusive list gets in first on October 21. Everyone else gets in on October 22, when the collection launches on our website.</p>
-      <div class="hero__dates"><div><span class="hero__d">Oct 21</span><span class="hero__n">Priority access</span></div><div><span class="hero__d">Oct 22</span><span class="hero__n">Website launch</span></div></div>
+      <div class="hero__dates"><div><span class="hero__d">Oct 21</span><span class="hero__n">Priority access</span></div><div><span class="hero__d">Oct 22</span><span class="hero__n">Website launch</span></div><div><span class="hero__d">Oct 27–30</span><span class="hero__n">Influencer launch</span></div></div>
     </div>
     <div class="carousel" aria-roledescription="carousel"><div class="track"><figure class="slide"><img src="img/campaign-trio.jpg" alt="Jack, Lemmy and Medusa in the grey room"></figure><figure class="slide"><img src="img/medusa-lifestyle.jpg" alt="Medusa campaign" loading="lazy"></figure><figure class="slide"><img src="img/lemmy-hand.jpg" alt="Lemmy held in an organza glove" loading="lazy"></figure><figure class="slide"><img src="img/jack-campaign.jpg" alt="Jack in a hand with red nails" loading="lazy"></figure><figure class="slide"><img src="img/lemmy-campaign.jpg" alt="Lemmy campaign with model" loading="lazy"></figure></div><div class="dots"><button type="button" class="dot is-on" aria-label="Show image 1"></button><button type="button" class="dot" aria-label="Show image 2"></button><button type="button" class="dot" aria-label="Show image 3"></button><button type="button" class="dot" aria-label="Show image 4"></button><button type="button" class="dot" aria-label="Show image 5"></button></div></div>
   </div>
@@ -273,6 +274,13 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(60px,9vw,120px);li
         <p class="date__time">8 AM ET · 8 PM HKT</p>
         <h3>Website launch</h3>
         <ul><li>The collection launches on hellonancy.com for everyone</li><li>The Blind Box stays the main offer, while stock lasts</li><li>Jack, Lemmy and Medusa individually</li><li>All three together as a set</li></ul>
+      </article>
+      <article class="date">
+        <p class="date__tag">Creators</p>
+        <p class="date__day">Oct 27–30</p>
+        <p class="date__time">On creators’ own socials</p>
+        <h3>Influencer launch</h3>
+        <ul><li>Influencers post about Monster Mansion on their own social channels</li><li>Posts go live between October 27 and October 30</li></ul>
       </article></div>
       <div class="matrix"><h3 class="label">What's on sale when</h3><div class="scroll"><table><thead><tr><th></th><th scope='col'>Oct 21 · signups</th><th scope='col'>Oct 22 · public</th></tr></thead><tbody><tr><th scope='row'>Blind Box (main offer)</th><td class="m m--yes"><span aria-hidden="true">●</span><span class="sr">On sale</span></td><td class="m m--note">While stock lasts</td></tr><tr><th scope='row'>Jack</th><td class="m m--note">Available, not the main offer</td><td class="m m--yes"><span aria-hidden="true">●</span><span class="sr">On sale</span></td></tr><tr><th scope='row'>Lemmy</th><td class="m m--note">Available, not the main offer</td><td class="m m--yes"><span aria-hidden="true">●</span><span class="sr">On sale</span></td></tr><tr><th scope='row'>Medusa</th><td class="m m--note">Available, not the main offer</td><td class="m m--yes"><span aria-hidden="true">●</span><span class="sr">On sale</span></td></tr><tr><th scope='row'>All three together</th><td class="m m--no"><span aria-hidden="true">–</span><span class="sr">Not on sale</span></td><td class="m m--yes"><span aria-hidden="true">●</span><span class="sr">On sale</span></td></tr></tbody></table></div></div></div>
   </div></section>
